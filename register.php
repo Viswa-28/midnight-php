@@ -1,10 +1,5 @@
 <?php
 include('config/config.php');
-// Start session to use later (e.g., for flash messages)
-// session_start();
-
-
-
 $name = $email = $password = $confirm_password = "";
 $errors = [];
 
@@ -52,7 +47,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     if (empty($errors)) {
-        $query = "INSERT INTO registration (name, email, password) VALUES ('$name', '$email', '$password')";
+        $query = "INSERT INTO registration (name, email, password,status) VALUES ('$name', '$email', '$password','user')";
         echo $query;
         $res = mysqli_query($connection, $query);
         if ($res) {
@@ -93,7 +88,7 @@ include('head.php');
         <input type="password" name="confirm_password">
         <div class="error"><?= $errors['confirm_password'] ?? '' ?></div>
 
-        <input type="submit" value="Register">
+        <input type="submit" value="Register" class="submit-btn">
     </form>
 
 

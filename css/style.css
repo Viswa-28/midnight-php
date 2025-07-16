@@ -181,6 +181,13 @@ p{
   z-index: 999;
   display: none; 
 }
+.modal-content a{
+  color: #7C3AED;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 20px;
+}
 
 
 .inner-modal {

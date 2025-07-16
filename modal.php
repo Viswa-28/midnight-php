@@ -1,4 +1,10 @@
- <div class="modal">
+ <!DOCTYPE html>
+ <html lang="en">
+<?php
+include('head.php');
+?>
+ <body>
+    <div class="modal">
         <div class="inner-modal">
             <div class="close-modal">
                 <i class="bi bi-x"></i>
@@ -11,9 +17,11 @@
                     <label for="password">Password:</label>
                     <input type="password"  id="password" name="password" required>
                     <button type="submit" name="login">Sign Up</button>
-                    <a href="./register.php">Register</a>
+                    <a href="./register.php" class="register-link">Register</a>
                 </form>
             </div>
 
         </div>
     </div>
+ </body>
+ </html>

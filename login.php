@@ -1,6 +1,6 @@
 <?php
 include('config/config.php');
-session_start();
+// session_start();
 ?>
 
 
@@ -20,16 +20,23 @@ include('head.php');
         $result = mysqli_query($connection, $query);
         if($result){
            while($row=mysqli_fetch_array($result)){
-             $usermail = $row['email'];
-             $userpassword = $row['password'];
-             if($email == $usermail && $password == $userpassword){
-                $_SESSION['email'] = $email;
-                header("Location: index.php");
-                exit();
-             } else {
-                echo "<script>alert('Invalid email or password');</script>";
+             $userMail = $row['email'];
+             $userPassword = $row['password'];
+             if($email == $userMail && $password == $userPassword){
+                echo "<p style='color: green;'>Login successful !!!</p>";
+                header("Location:index.php");
+             } elseif($email == $userMail && $password != $userPassword) {
+                echo "<p style='color: red;'>Incorrect password !!!</p>";
+                header("Location:login.php");
+             } elseif($email != $userMail && $password == $userPassword) {
+                echo "<p style='color: red;'>Invalid email !!!</p>";
+             } elseif($email == $userMail && $password == $userPassword && $row['status'] == 'admin') {
+                  echo "<p style='color: green;'>Admin login successful !!!</p>";
+                  header("Location:admin.php");
              }
-
+             else {
+                echo "<p style='color: red;'>Invalid email or password !!!</p>";
+             }
            }
         }
     }

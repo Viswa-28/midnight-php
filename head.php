@@ -34,15 +34,15 @@ elseif($page=='cart.php') {
 }
 elseif($page=="register.php") {
   echo '<link rel="stylesheet" href="./css/register.css">';
-    echo '<link rel="stylesheet" href="./css/common.css">';
+    // echo '<link rel="stylesheet" href="./css/common.css">';
 }
-elseif($page=="registration.php") {
-  echo '<link rel="stylesheet" href="./css/register.css">';
-    echo '<link rel="stylesheet" href="./css/common.css">';
-}
+
 elseif($page=="login.php") {
   echo '<link rel="stylesheet" href="./css/login.css">';
     // echo '<link rel="stylesheet" href="./css/common.css">';
+}
+elseif($page=="modal.php") {
+    echo '<link rel="stylesheet" href="./css/common.css">';  
 }
  ?>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">

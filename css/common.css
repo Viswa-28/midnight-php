@@ -38,7 +38,7 @@
   cursor: pointer;
   transition: all 0.3s ease;
   text-transform: capitalize;
-  box-shadow: 0 4px 20px rgba(124, 60, 173, 0.5);
+  /* box-shadow: 0 4px 20px rgba(124, 60, 173, 0.5); */
   /* margin-top: 20px; */
 
   &:hover {
@@ -193,6 +193,20 @@ body {
   justify-content: center;
   z-index: 999;
   display: none;
+}
+.modal a{
+  color: #7C3AED;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 20px;
+}
+.modal-content .register-link {
+  color: #000000;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 20px;
 }
 
 
