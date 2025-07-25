@@ -25,17 +25,23 @@ include('head.php');
              if($email == $userMail && $password == $userPassword){
                 echo "<p style='color: green;'>Login successful !!!</p>";
                 header("Location:index.php");
+                
+               
+                
              } elseif($email == $userMail && $password != $userPassword) {
                 echo "<p style='color: red;'>Incorrect password !!!</p>";
-                header("Location:login.php");
+                header("Location:admin.php");
              } elseif($email != $userMail && $password == $userPassword) {
                 echo "<p style='color: red;'>Invalid email !!!</p>";
-             } elseif($email == $userMail && $password == $userPassword && $row['status'] == 'admin') {
+             } elseif($email == $userMail && $password == $userPassword && ($row['status'] == 'admin')) {
                   echo "<p style='color: green;'>Admin login successful !!!</p>";
                   header("Location:admin.php");
-             }
-             else {
+             } elseif($email == $userMail && $password == $userPassword && ($row['status'] == 'user')) {
+                  echo "<p style='color: green;'>User login successful !!!</p>";
+                  header("Location:index.php");
+             } else {
                 echo "<p style='color: red;'>Invalid email or password !!!</p>";
+                header("Location:index.php");
              }
            }
         }

@@ -1,3 +1,10 @@
+   function openLoginModal() {
+        // Your actual logic to open the modal, e.g.:
+        document.querySelector('.modal').style.display = 'block';
+    }
+
+
+
 
 let hamburgerIcon = document.querySelector('.hamburger-icon');
 let linksMenu = document.querySelector('.links');

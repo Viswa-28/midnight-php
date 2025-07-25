@@ -1,9 +1,4 @@
- <!DOCTYPE html>
- <html lang="en">
-<?php
-include('head.php');
-?>
- <body>
+
     <div class="modal">
         <div class="inner-modal">
             <div class="close-modal">
@@ -23,5 +18,3 @@ include('head.php');
 
         </div>
     </div>
- </body>
- </html>

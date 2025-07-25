@@ -17,7 +17,7 @@ include('head.php');
   <main>
     .
     <div class="breadcrumb">
-      <a href="./index.html" class="home-link">
+      <a href="./index.php" class="home-link">
         <i class="bi bi-house-door-fill"></i> Home
       </a>
       <span class="separator">/</span>

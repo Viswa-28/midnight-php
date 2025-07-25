@@ -48,11 +48,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if (empty($errors)) {
         $query = "INSERT INTO registration (name, email, password,status) VALUES ('$name', '$email', '$password','user')";
-        echo $query;
+        // echo $query;
         $res = mysqli_query($connection, $query);
         if ($res) {
             echo "<p style='color: green;'>Registration successful !!!</p>";
-            header("Location:index.php");
+            header("Location:index.php?login=1");
+           
         } else {
             // $errors['db'] = "Database error: " . mysqli_error($connection);
             echo "<p style='color: red;'>Registration not done properly !!!</p>";
@@ -87,6 +88,8 @@ include('head.php');
         <label>Confirm Password:</label><br>
         <input type="password" name="confirm_password">
         <div class="error"><?= $errors['confirm_password'] ?? '' ?></div>
+
+        
 
         <input type="submit" value="Register" class="submit-btn">
     </form>

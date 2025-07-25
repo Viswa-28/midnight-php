@@ -44,6 +44,10 @@ elseif($page=="login.php") {
 elseif($page=="modal.php") {
     echo '<link rel="stylesheet" href="./css/common.css">';  
 }
+elseif($page=="admin.php") {
+    echo '<link rel="stylesheet" href="./css/admin.css">';
+    // echo '<link rel="stylesheet" href="./css/style.css">';
+}
  ?>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">

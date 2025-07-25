@@ -1,3 +1,4 @@
+
  <header>
     <div class="nav">
       <h2 class="fs-25">Midnight Vouge</h2>
@@ -15,9 +16,15 @@
       <div class="icon-container">
         <i class="bi bi-search"></i>
         <i class="bi bi-bag"></i>
-        <div class="primary-btn signup">
-          Login
-        </div>
+
+
+
+          <div class="primary-btn signup">
+            Login
+          </div>
+        
+      
+      
       </div>
     </div>
   </header>

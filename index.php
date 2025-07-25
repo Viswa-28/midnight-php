@@ -1,6 +1,9 @@
 <?php
 include('config/config.php');
 session_start();
+if (isset($_GET['login']) && $_GET['login'] == 1) {
+    echo "<script>document.addEventListener('DOMContentLoaded', function() { openLoginModal(); });</script>";
+}
 ?>
 
 

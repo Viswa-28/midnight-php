@@ -14,7 +14,8 @@ include('head.php');
     <!-- navbar-end -->
     <main>
         <div class="breadcrumb">
-            <a href="./product.html" class="home-link">
+            <a href="./product.php
+            " class="home-link">
                 Noir Muse
             </a>
             <span class="separator">/</span>
